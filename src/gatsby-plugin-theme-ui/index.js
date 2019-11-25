@@ -29,13 +29,14 @@ export default {
       primary: "#461212",
     },
     background: "#fff",
+    grey1: "#111113",
     primary: "#698691",
     secondary: "#42555c",
-    muted: "#f6f6f6",
+    muted: "hsl(0, 0%, 91%)",
     modes: {
       dark: {
         text: "#fff",
-        background: "#111",
+        background: "#111113",
         primary: "#a2c5e0",
       },
     },

@@ -1,8 +1,12 @@
 module.exports = {
   siteMetadata: {
     title: `Red Pillar`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    description: `We build vigorous web solutions for inspired entrepreneurs.`,
+    headline: `Bring your creations to the world.`,
+    author: `Isaac Pierce`,
+    url: `https://www.isaacpierce.io/`,
+    twitter: `@isaacdpierce`,
+    twitterUrl: `https://twitter.com/isaacdpierce`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
