@@ -26,7 +26,7 @@ export default {
   colors: {
     text: "#000",
     red: {
-      primary: "#461212",
+      primary: "#330000",
     },
     background: "#fff",
     grey1: "#111113",

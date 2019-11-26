@@ -5,17 +5,19 @@ import styled from "@emotion/styled"
 import Img from "gatsby-image"
 import React from "react"
 import Logo from "../logo/logo"
-import useBgTexture from "../../hooks/useBgTexture"
+import useBgTexture from "../../hooks/useBgTextureLight"
 
 const StyledHeader = styled.header`
   grid-column: 1 / -1;
+  grid-row: 1 / span 1;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100%;
   border-bottom: 1px solid black;
-  box-shadow: 1px 0 2px 2px black;
+  box-shadow: 1px 0 3px 3px black;
   z-index: 99;
+  position: relative;
 `
 
 export default () => {
@@ -24,19 +26,8 @@ export default () => {
     <StyledHeader
       sx={{
         backgroundColor: "grey1",
-        mb: 7,
       }}
     >
-      <Img
-        className="background-texture"
-        alt=""
-        role="presentation"
-        fluid={bgTexture}
-        css={css`
-          opacity: 0.5;
-          height: 100%;
-        `}
-      />
       <Logo />
     </StyledHeader>
   )

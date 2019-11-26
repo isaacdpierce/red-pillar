@@ -13,6 +13,7 @@ const StyledFooter = styled.footer`
   justify-content: center;
   align-items: center;
   height: 100%;
+  box-shadow: 0 -1px 2px 2px black;
   border-top: 1px solid #222;
   z-index: 99;
 `

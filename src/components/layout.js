@@ -1,12 +1,15 @@
 /** @jsx jsx */
 import React from "react"
 import { jsx } from "theme-ui"
+import { css } from "@emotion/core"
+import Img from "gatsby-image"
 import styled from "@emotion/styled"
 import PropTypes from "prop-types"
 import Header from "./header/header"
 import Footer from "./footer/footer"
 import Pillar from "./pillar/pillar"
-import BgTexture from "./background/bgTexture"
+import BgTexture from "./background/bgTextureLight"
+
 import "./layout.css"
 
 const LayoutGrid = styled.div`
@@ -14,6 +17,7 @@ const LayoutGrid = styled.div`
   grid-template-columns: 47.5vw 5vw 47.5vw;
   grid-template-rows: 100px 1fr 100px;
   min-height: calc(100vh + 100px);
+  overflow: hidden;
 `
 
 const StyledMain = styled.main`
@@ -23,19 +27,15 @@ const StyledMain = styled.main`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-`
-
-const StyledBgTexture = styled(BgTexture)`
-  grid-column: 1 / -1;
-  grid-row: 1 / -1;
+  z-index: 99;
 `
 
 const Layout = ({ children }) => {
   return (
     <LayoutGrid sx={{ backgroundColor: "muted" }}>
-      {/* <StyledBgTexture /> */}
+      <BgTexture />
       <Header />
-      <StyledMain>{children}</StyledMain>
+      <StyledMain sx={{ px: 6, py: 3 }}>{children}</StyledMain>
       <Pillar />
       <Footer />
     </LayoutGrid>

@@ -8,7 +8,14 @@ import React from "react"
 const createLogo = str => {
   return [...str.toUpperCase()].map((letter, i) =>
     letter === "I" ? (
-      <span key={i} sx={{ color: "red.primary" }}>
+      <span
+        key={i}
+        sx={{
+          color: "red.primary",
+          fontWeight: 700,
+          textShadow: "0 0 1px white",
+        }}
+      >
         {letter}
       </span>
     ) : (
