@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
     title: `Red Pillar`,
-    description: `We build vigorous web solutions for inspired entrepreneurs.`,
-    headline: `Bring your creations to the world.`,
+    description: `We build vigorous web solutions for relentless entrepreneurs.`,
+    headline: `We build fierce, snappy, nimble, on-the-double, vigorous web solutions for industrious, obsessed, wild, devoted, determined, relentless, hell-bent entrepreneurs.`,
     author: `Isaac Pierce`,
     url: `https://www.isaacpierce.io/`,
     twitter: `@isaacdpierce`,

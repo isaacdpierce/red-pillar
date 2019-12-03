@@ -9,6 +9,7 @@ import Header from "./header/header"
 import Footer from "./footer/footer"
 import Pillar from "./pillar/pillar"
 import BgTexture from "./background/bgTextureLight"
+import MainImage from "./landing/mainImage"
 
 import "./layout.css"
 
@@ -27,14 +28,16 @@ const StyledMain = styled.main`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  z-index: 99;
+  z-index: 1;
 `
 
 const Layout = ({ children }) => {
   return (
     <LayoutGrid sx={{ backgroundColor: "muted" }}>
       <BgTexture />
+
       <Header />
+      <MainImage />
       <StyledMain sx={{ px: 6, py: 3 }}>{children}</StyledMain>
       <Pillar />
       <Footer />

@@ -7,7 +7,7 @@ export default () => {
   const { description } = UseSiteMetaData()
   return (
     <div>
-      <h1 sx={{ lineHeight: "138%", fontSize: 7 }}>{description}</h1>
+      <h1 sx={{ lineHeight: "135%", fontSize: 7 }}>{description}</h1>
     </div>
   )
 }
